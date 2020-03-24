@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lista lotów</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="window">
+        <p id="success">Rezerwacja zakończona powodzeniem.</p>
+    </div>
+    <div class="container">
+        <div class="headers">
+           <h1>Lista lotów</h1>
+           <p id="pierwszy">Strona przedstawia listę lotów.</p>
+           <p id="drugi">Pod id_lotu znajduję się link do informacji o locie.</p>
+        </div>
+        <div class="tab">
+            <table style="border: 3mm ridge yellow">
+                <thead>
+                    <tr>
+                       <th>Nr_lotu</th><th>Skąd</th><th>Dokąd</th><th>Data</th><th>Godzina</th>
+                    </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                        <th><a href="podstrona1.html">1</a></th><th>Warszawa</th><th>Paryż</th><th>03.03.2020</th><th>12:00</th>
+                    </tr>
+                    <p id="extra">Ale super lot!</p>
+                    <tr id="superlot">
+                        <th><a href="podstrona2.html">2</a></th><th>Madryt</th><th>Waszyngton</th><th>07.03.2020</th><th>13:20</th>
+                    </tr>
+                    <tr>
+                        <th><a href="podstrona3.html">3</a></th><th>Londyn</th><th>Sydney</th><th>10.03.2020</th><th>22:00</th>
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+        <div class="item">
+            <img src="Samolot.jpg" alt="logo_firmy" id="logo">
+        </div>
+        <div class="can">
+            <strong>Opóźnienia i odwołane loty</strong>
+            <ul id="cancelled">
+                <li class="odw">Warszawa-Bergamo, odwołany</li>
+                <li class="odw">Rzym-Tokio, odwołany</li>
+                <li class="op">Sydney-Pekin, opóźniony o 1h</li>
+                <li class="odw">Moskwa-Teheran, odwołany</li>
+                <li class="op">Los Angeles-Hawana, opóżniony o 20 minut</li>
+            </ul>
+        </div>
+        <div class="menu">
+            <div class="vertical-menu">
+                <a href="loty.html" class="active">Strona główna</a>
+                <a href="aktualnosci.html">Aktualności</a>
+                <a href="wyszukiwarka.html">Szukaj połączenia</a>
+                <a href="kontakt.html">Kontakt</a>
+                <a href="info.html">O Nas</a>
+            </div>
+        </div>
+        <div class="article">
+            <h2>MIMUW Airlines</h2>
+            <p>Lorem ipsum dolor sit amet dolor. Donec pede. Sed molestie, neque vitae mauris. Praesent consequat. Morbi congue odio fermentum varius. Cras id augue. Nulla facilisi. Nullam bibendum vel, lorem. In id lorem. Nam in faucibus justo. Aliquam ultricies neque vitae ante. Mauris vehicula ullamcorper. Nam urna. Cras porta, est pretium varius, scelerisque a, urna. Nulla in ligula non eros sagittis et, congue dolor. Fusce eu nulla dolor sit amet mauris. Aenean lobortis convallis, dui dolor, dictum eget, nonummy consequat. Aliquam risus nisl, blandit ipsum, congue urna. Nam diam justo, condimentum ante sit amet sagittis malesuada. Sed tincidunt blandit eu, cursus eu, elit. Nunc id lectus. Pellentesque molestie vitae, dolor. Morbi id augue. Pellentesque ante. Donec pulvinar velit. Cum sociis natoque penatibus et lacus sed turpis. Sed eget sapien. Suspendisse molestie. Vivamus diam leo eros, id sapien leo lacus, ullamcorper id, congue ac, ante. Proin sem fringilla id, congue nibh nulla eu tortor. Mauris nec diam sed augue. Sed mauris sed leo. Vivamus lacus. Nullam augue turpis, accumsan augue quis pellentesque leo. Suspendisse potenti. Morbi sed dui. Aliquam ultricies ut, urna.</p>
+        </div>
+        <div class="item">
+            <form action="rezerwacja.html" method="post">
+                <strong>Rezerwuj lot</strong>
+                <br>
+                <label for="fname">Imię:</label><br>
+                <input disabled type="text" id="fname" name="fname"><br>
+                <label for="lname">Nazwisko:</label><br>
+                <input disabled type="text" id="lname" name="lname"><br>
+                <label for="origin">Skąd:</label><br>
+                <input disabled type="text" id="origin" name="origin"><br>
+                <label for="destination">Dokąd:</label><br>
+                <input disabled type="text" id="destination" name="destination"><br>
+                <label for="date">Data:</label><br>
+                <input disabled type="date" id="date" name="date"><br><br>
+                <button disabled type="submit" value="szukaj">Szukaj</button>
+                <button disabled type="reset" value="wyczysc">Wyczyść</button><br><br>
+            </form>
+        </div>
+    </div>
+    <footer>
+        Andrzej Siuciak
+    </footer>
+</body>
+</html>

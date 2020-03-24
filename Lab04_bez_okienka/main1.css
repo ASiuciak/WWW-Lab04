@@ -1,0 +1,108 @@
+h1 {
+    color: royalblue;
+    text-align: center;
+  }
+h2 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+body {
+  background-color: peru;
+}
+img {
+  display: inline;
+}
+.column {
+  float: left;
+  width: 48%;
+  padding: 5px;
+  margin-left: 20px;
+}
+.pic {
+  float: center;
+}
+.links {
+  width: 100 px;
+  background-color: blueviolet;
+  position: absolute;
+}
+.boeing {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.list {
+  width: 15%;
+  font-size: 20px;
+  margin: auto;
+  border: 2mm rigde red;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+@media screen and (max-width: 700px) {
+  .boeing {
+    display: none;
+  }
+  img {
+    display: none;
+  }
+}
+#popup1 {
+  width: 200px;
+  height: 30px;
+  background-color: peru;
+  position: relative;
+  right: 20px;
+  top: 25px;
+  text-align: center;
+  color: peru;
+}
+#popup1:hover{
+  color: blue;
+}
+#popup2 {
+  width: 200px;
+  height: 30px;
+  background-color: peru;
+  position: relative;
+  right: 20px;
+  top: 25px;
+  text-align: center;
+  color: peru;
+}
+#popup2:hover{
+  color: blue;
+}
+#popup3 {
+  width: 200px;
+  height: 30px;
+  background-color:peru;
+  position: relative;
+  right: 20px;
+  top: 25px;
+  text-align: center;
+  color: peru;
+}
+#popup3:hover{
+  color: blue;
+}
+#popup4 {
+  width: 200px;
+  height: 30px;
+  background-color: peru;
+  position: relative;
+  right: 20px;
+  top: 25px;
+  text-align: center;
+  color: peru;
+}
+#popup4:hover{
+  color: blue;
+}

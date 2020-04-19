@@ -10,12 +10,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="headers">
+        <section class="headers">
            <h1>Lista lotów</h1>
-           <p id="pierwszy">Strona przedstawia listę lotów.</p>
-           <p id="drugi">Pod id_lotu znajduję się link do informacji o locie.</p>
-        </div>
-        <div class="tab">
+           <h3 id="pierwszy">Strona przedstawia listę lotów.</h3>
+           <h3 id="drugi">Pod id_lotu znajduję się link do informacji o locie.</h3>
+        </section>
+        <section class="tab">
             <table style="border: 3mm ridge yellow">
                 <thead>
                     <tr>
@@ -35,36 +35,38 @@
                     </tr>
                  </tbody>
             </table>
-        </div>
-        <div class="item">
+        </section>
+        <figure class="img">
             <img src="Samolot.jpg" alt="logo_firmy" id="logo">
-        </div>
-        <div class="can">
-            <strong>Opóźnienia i odwołane loty</strong>
+        </figure>
+        <section class="can">
+            <header>Opóźnienia i odwołane loty</header>
             <ul id="cancelled">
                 <li class="odw">Warszawa-Bergamo, odwołany</li>
                 <li class="odw">Rzym-Tokio, odwołany</li>
                 <li class="op">Sydney-Pekin, opóźniony o 1h</li>
                 <li class="odw">Moskwa-Teheran, odwołany</li>
                 <li class="op">Los Angeles-Hawana, opóżniony o 20 minut</li>
+                <li class="op">Berlin-Wuhan, opóżniony o 40 minut</li>
             </ul>
-        </div>
-        <div class="menu">
-            <div class="vertical-menu">
+        </section>
+        <section class="menu">
+            <header>Menu</header>
+            <nav class="vertical-menu">
                 <a href="loty.html" class="active">Strona główna</a>
                 <a href="aktualnosci.html">Aktualności</a>
                 <a href="wyszukiwarka.html">Szukaj połączenia</a>
                 <a href="kontakt.html">Kontakt</a>
                 <a href="info.html">O Nas</a>
-            </div>
-        </div>
-        <div class="article">
-            <h2>MIMUW Airlines</h2>
+            </nav>
+        </section>
+        <article class="article">
+            <header>MIMUW Airlines</header>
             <p>Lorem ipsum dolor sit amet dolor. Donec pede. Sed molestie, neque vitae mauris. Praesent consequat. Morbi congue odio fermentum varius. Cras id augue. Nulla facilisi. Nullam bibendum vel, lorem. In id lorem. Nam in faucibus justo. Aliquam ultricies neque vitae ante. Mauris vehicula ullamcorper. Nam urna. Cras porta, est pretium varius, scelerisque a, urna. Nulla in ligula non eros sagittis et, congue dolor. Fusce eu nulla dolor sit amet mauris. Aenean lobortis convallis, dui dolor, dictum eget, nonummy consequat. Aliquam risus nisl, blandit ipsum, congue urna. Nam diam justo, condimentum ante sit amet sagittis malesuada. Sed tincidunt blandit eu, cursus eu, elit. Nunc id lectus. Pellentesque molestie vitae, dolor. Morbi id augue. Pellentesque ante. Donec pulvinar velit. Cum sociis natoque penatibus et lacus sed turpis. Sed eget sapien. Suspendisse molestie. Vivamus diam leo eros, id sapien leo lacus, ullamcorper id, congue ac, ante. Proin sem fringilla id, congue nibh nulla eu tortor. Mauris nec diam sed augue. Sed mauris sed leo. Vivamus lacus. Nullam augue turpis, accumsan augue quis pellentesque leo. Suspendisse potenti. Morbi sed dui. Aliquam ultricies ut, urna.</p>
-        </div>
-        <div class="item">
+        </article>
+        <section class="item">
+            <header>Rezerwuj lot</header>
             <form action="rezerwacja.html" method="post">
-                <strong>Rezerwuj lot</strong>
                 <br>
                 <label for="fname">Imię:</label><br>
                 <input type="text" id="fname" name="fname"><br>
@@ -79,10 +81,10 @@
                 <button type="submit" value="szukaj">Szukaj</button>
                 <button type="reset" value="wyczysc">Wyczyść</button><br><br>
             </form>
-        </div>
+        </section>
+        <footer>
+            Andrzej Siuciak
+        </footer>
     </div>
-    <footer>
-        Andrzej Siuciak
-    </footer>
 </body>
 </html>

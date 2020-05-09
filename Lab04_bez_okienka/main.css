@@ -4,6 +4,14 @@ h1 {
 body {
   text-align: center;
   background-color: paleturquoise;
+  display: grid;
+  grid-template-columns: 250px auto 250px;
+  grid-template-rows: auto auto auto auto auto;
+}
+@media screen and (max-width: 700px){
+  body {
+    display: inline-block;
+  }
 }
 footer {
     background-color: paleturquoise;
@@ -38,7 +46,7 @@ thead {
   font-style: oblique;
   color: darkblue;
   position: absolute;
-  top: 250px;
+  top: 260px;
   left: 145px;
 }
 #superlot {
@@ -61,12 +69,12 @@ thead {
   margin-right: auto;
   position: relative;
 }
-.vertical-menu {
+#menu {
   width: 200px;
   flex: 1;
 }
 
-.vertical-menu a {
+#menu a {
   background-color: orchid;
   color: black;
   display: block;
@@ -74,12 +82,12 @@ thead {
   text-decoration: none;
 }
 
-.vertical-menu a:hover {
+#menu a:hover {
   background-color: #ccc;
   text-transform: uppercase;
 }
 
-.vertical-menu a.active {
+#menu a.active {
   background-color: olivedrab;
   text-transform: uppercase;
   color: white;
@@ -89,10 +97,6 @@ a {
 }
 ul {
   list-style-type: none;
-}
-header {
-  font-size: 30px;
-  text-align: center;
 }
 .odw {
   width: 200px;
@@ -115,47 +119,40 @@ header {
   justify-content: center;
   padding: 20px;
 }
-.container {
-  display: grid;
-  grid-template-columns: 250px auto 250px;
-  grid-template-rows: auto auto auto auto auto;
-}
-@media screen and (max-width: 700px){
-  .container {
-    display: inline-block;
-  }
-}
-.headers {
+
+/* Położenie elementów strony. */
+
+header {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-start: 1;
 }
-.tab {
+#tab {
   grid-column: 1;
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.img {
+figure {
   grid-column-start: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 }
-.can {
+#can {
   grid-column: 3;
   grid-row-start: 2;
   grid-row-end: 4;
 }
-.menu {
+nav {
   grid-row: 4;
   grid-column: 1;
   width: 200px;
 }
-.article {
+article {
   grid-row: 4;
   grid-column: 2;
 }
-.item {
+#reservation {
   grid-row: 4;
   grid-column: 3;
 }
